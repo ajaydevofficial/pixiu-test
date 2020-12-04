@@ -1,0 +1,63 @@
+body{
+    height: 100vh !important;
+}
+
+.bootstrap-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    max-width: 100px !important;
+}
+
+.dropleft .dropdown-toggle::before {
+    display:none !important;
+}
+
+.flipped-img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.notification-header{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.notification-subtext {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.notification-img{
+    width:100% !important;
+}
+
+.small-icon{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+a{
+    cursor: pointer;
+    text-decoration:none !important;
+}
+
+.notification-badge{
+    top: -12px !important;
+    left: -15px !important;
+}
+
+.notification-pop .popover-body{
+    height: 300px !important;
+    overflow-y: scroll !important;
+}
+
+.hidden{
+    background-color: transparent !important;
+    color: transparent !important
+}
