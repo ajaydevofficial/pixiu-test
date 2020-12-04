@@ -41,19 +41,20 @@ def register(request):
         'error': None
     }
     if request.user.is_authenticated:
-        return redirect('')
+        return redirect('/')
     if request.method=='POST':
         try:
             first_name = request.POST['first_name']
             username = request.POST['username']
             last_name = request.POST['last_name']
             password = request.POST['password']
-            User.objects.create(
+            user = User.objects.create(
                 first_name = first_name,
                 last_name = last_name,
-                username = username,
-                password = password
+                username = username
             )
+            user.set_password(password)
+            user.save()
             context['error'] = None
             return redirect('/login')
         except Exception as e:
